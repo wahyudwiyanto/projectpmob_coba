@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/vector1" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Masuk ke Akun Anda"
+        android:textAlignment="center"
+        android:layout_marginBottom="10sp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="9dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginStart="23dp"
+            app:srcCompat="@drawable/pngwing" />
+
+        <ImageView
+            android:id="@+id/twiter"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="36dp"
+            app:srcCompat="@drawable/twiter" />
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="36dp"
+            app:srcCompat="@drawable/google" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_orange_smoth"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginEnd="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/background_orange_smoth"
+                android:hint="Password"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/showPasswordIcon"
+            android:layout_width="87dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="Show Password"
+            android:padding="14dp"
+            android:src="@drawable/hide" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:background="@drawable/selector"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button77"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:background="@drawable/selector3"
+        android:text="Registrasi"
+        android:textColor="@color/orange"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="9dp"
+        android:text="Hanya Joging"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:background="@drawable/selector3"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

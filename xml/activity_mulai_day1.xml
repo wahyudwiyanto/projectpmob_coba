@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="35dp"
+        android:text="KURANGI BERAT BADAN DALAM 30 HARI"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hari1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30sp"
+        android:text="HARI 1"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/greywithorange">
+
+        <TextView
+            android:id="@+id/pushUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42sp"
+            android:text="PUSH UP"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:layout_marginTop="95dp"
+            app:srcCompat="@drawable/vector99" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="48sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="22dp"
+            android:background="@drawable/selector"
+            android:textColor="@color/whitesusu"
+            android:text="Start Timer"/>
+    </LinearLayout>
+</LinearLayout>

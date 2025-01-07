@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Berapa kali anda bisa push up sekaligus?"
+        android:textSize="28dp"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:layout_marginTop="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/vector13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/greywithorange"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/outline_white"
+                android:padding="20dp"
+                android:textColor="@color/whitesusu"
+                android:text="Saya tidak bisa"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/outline_white"
+                android:padding="20dp"
+                android:textColor="@color/whitesusu"
+                android:text="0-5 kali"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/outline_white"
+                android:padding="20dp"
+                android:textColor="@color/whitesusu"
+                android:text="5-10 Kali"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/outline_white"
+                android:padding="20dp"
+                android:textColor="@color/whitesusu"
+                android:text="10-20 kali"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/outline_white"
+                android:padding="20dp"
+                android:textColor="@color/whitesusu"
+                android:text="lebih dari 20 "
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

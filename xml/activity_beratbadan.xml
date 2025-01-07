@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textColor="@color/orange"
+        android:text="Berapa berat anda saat ini?"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/greywithorange"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65.5 kg"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_gravity="center"
+                android:paddingBottom="1dp" />
+            <RadioGroup
+                android:id="@+id/unitGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/kgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/orange"
+                    android:text="kg"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/lbButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/orange"
+                    android:layout_height="wrap_content"
+                    android:text="lb" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/bmiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI: 25.6"
+                android:layout_marginTop="12sp"
+                android:textSize="24sp"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <SeekBar
+                android:id="@+id/weightSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:max="200"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:progress="65" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="254dp"
+                app:srcCompat="@drawable/vector15" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanjut"
+                android:layout_margin="33dp"
+                android:textSize="17dp"
+                android:background="@drawable/selector"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

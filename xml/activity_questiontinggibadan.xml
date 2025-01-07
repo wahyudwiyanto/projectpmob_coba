@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:text="Berapa tinggi Anda?"
+        android:textColor="@color/orange"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/greywithorange"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:gravity="center"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/orange" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/orange"
+                android:text="cm"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio_ft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/orange"
+                android:text="ft"
+                android:checked="true" />
+        </RadioGroup>
+
+
+
+    <SeekBar
+        android:id="@+id/seekBarHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:max="250"
+        android:progress="250" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_height="324dp"
+            app:srcCompat="@drawable/vector32" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_margin="33dp"
+        android:background="@drawable/selector"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

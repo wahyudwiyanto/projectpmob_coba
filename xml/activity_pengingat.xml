@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mengingatkan Anda Untuk Berlatih"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginTop="123dp"
+        android:gravity="center"
+        android:textColor="@color/orange"/>
+
+    <TextView
+        android:id="@+id/reminderDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengingat pintar membantu 68% pengguna mencapai target mereka lebih cepat"
+        android:textSize="19dp"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp"/>
+
+    <!-- TimePicker untuk memilih waktu -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="14dp"/>
+
+    <RadioButton
+        android:id="@+id/noReminderRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:text="Tidak, saya tidak memerlukannya" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="54dp"
+        android:background="@drawable/selector"
+        android:text="Lanjut"
+        android:textColor="@color/whitesusu"
+        android:textSize="17dp" />
+
+
+</LinearLayout>
