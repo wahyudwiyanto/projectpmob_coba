@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Saat tombol ditekan (warna latar belakang dan garis luar berubah) -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- Warna latar belakang saat tombol ditekan -->
+            <solid android:color="#FFFEF7"/> <!-- Ganti dengan warna latar belakang yang diinginkan -->
+            <!-- Warna garis luar saat tombol ditekan -->
+            <stroke android:width="2dp" android:color="#ff7f00"/>
+        </shape>
+    </item>
+
+    <!-- Warna default tombol (saat tidak ditekan) -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <!-- Warna latar belakang default -->
+            <solid android:color="#FFFEF7"/> <!-- Ganti dengan warna latar belakang normal -->
+            <!-- Warna garis luar default -->
+            <stroke android:width="2dp" android:color="#D0D2D1"/>
+            <corners android:radius="36dp"/>
+        </shape>
+    </item>
+</selector>

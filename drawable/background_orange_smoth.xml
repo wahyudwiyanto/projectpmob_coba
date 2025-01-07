@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Warna ketika tombol ditekan atau disentuh -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#666666"/> <!-- Ganti dengan warna yang diinginkan -->
+            <corners android:radius="16dp"/> <!-- Radius sudut tombol ketika ditekan -->
+        </shape>
+    </item>
+
+    <!-- Warna default tombol -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#fde5d5"/> <!-- Warna normal -->
+            <corners android:radius="56dp"/> <!-- Radius sudut tombol dalam keadaan normal -->
+        </shape>
+    </item>
+
+</selector>
